@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FLEXBOX</title>
+</head>
+<body>
+	<div class="container">
+   <img src="img.jpg">
+   <img src="img3.jpg">
+   <img src="img2.jpg">
+   <img src="img1.jpg">
+   <img src="img4.jpg">
+   <img src="img5.jpg">
+   <img src="img6.jpg">
+   <img src="img7.jpg">   
+   <img src="img8.jpg">  
+</div>
+
+<style>
+    * {
+    box-sizing: border-box  ;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.item
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+    padding: 2em 4em;
+}
+
+.container img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container::after {
+    content: "";
+    width: 350px;
+}
+</style>
+</body>
+</html>
